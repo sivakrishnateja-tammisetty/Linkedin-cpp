@@ -110,3 +110,21 @@ int main()
     }
     return 0;
 }
+
+
+
+Eg5: Recursive factorial sequence generator
+
+#include<iostream>
+using namespace std;
+int print_factorials(int n)
+{
+    int fact;
+    fact= (n==0) ? 1 :n*print_factorials(n-1);
+    cout<<fact<<" ";
+    return fact;
+}
+int main()
+{
+    print_factorials(5);
+}
