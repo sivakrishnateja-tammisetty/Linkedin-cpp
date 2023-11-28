@@ -80,3 +80,33 @@ int main()
     }
     return 0;
 }
+
+
+Eg4: printing FIZZBUZZ when n is mutliple of 3 print FIZZ and when n is multiple of 5 print BUZZ and n is multiple of 3 and 5 print FIZZBUZZ.
+
+    #include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    bool m3,m5;
+    cout<<"Enter any positive number:";
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        m3= (i%3)==0;
+        m5= (i%5)==0;
+        if(!m3 && !m5)
+        {
+            cout<<i<<endl;
+            }
+            else
+            {
+                 if(m3)cout<<"FIZZ";
+        if(m5)cout<<"BUZZ";
+            }
+            cout<<endl;
+       
+    }
+    return 0;
+}
