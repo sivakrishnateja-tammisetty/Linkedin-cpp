@@ -166,3 +166,34 @@ int main()
     cout<<res<<endl;
 
 }
+
+
+
+Eg: SUM OF ARRAY ELEMENTS
+
+    #include<iostream>
+using namespace std;
+int cal_sum(int *a,int n)
+{
+if(n==0)
+{
+return 0;
+}
+if(n==1)
+{
+    return a[0];
+}
+int sum=0;
+for(int i=0;i<n;i++)
+{
+    sum+=a[i];
+}
+return sum;
+}
+int main()
+{
+int arr[]={2};
+int n=sizeof(arr)/sizeof(arr[0]);
+cout<<"sum is :"<<cal_sum(arr,n)<<endl;
+return 0;
+}
