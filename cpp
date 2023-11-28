@@ -128,3 +128,41 @@ int main()
 {
     print_factorials(5);
 }
+
+
+
+
+
+
+Eg:6 VOWELS COUNT
+
+
+
+    #include<iostream>
+using namespace std;
+int vowels_count(const string str)
+{
+    int count =0;
+    for(int i=0;i<str.size();i++)
+    {
+        switch(str[i])
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            count++;
+            
+        }
+    }
+    return count;
+}
+int main()
+{
+    string s="sivakrishna";
+ 
+    int res= vowels_count(s);
+    cout<<res<<endl;
+
+}
